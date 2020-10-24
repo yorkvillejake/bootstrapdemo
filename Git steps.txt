@@ -1,0 +1,18 @@
+
+How do I update files in GitHub?
+
+Case 1: Don't care about local changes
+Solution 1: Get the latest code and reset the code git fetch origin git reset --hard origin/[tag/branch/commit-id usually: master]
+Solution 2: Delete the folder and clone again :D. rm -rf [project_folder] git clone [remote_repo]
+
+# after you're done editing...
+
+$ git add.
+$ git commit -m "msg"
+$ git push
+
+
+$ git status - shows where you're at "LOCALLY"
+
+$ git branch [some name]  --> create a new branch to be merged later (e.g. belt, testing, student, schedule, etc. )
+
